@@ -3,16 +3,16 @@ Setting Up Twilio Integration
 
 To integrate a Twilio SMS service into your application, you'll need to first set up a Twilio account and get your credentials. Here's a step-by-step guide:
 
-1. Set Up Twilio Account:
+1. Set Up Twilio:
    - Sign up for a Twilio account at twilio.com.
 
-2. Set Up Twilio Account:
- - Sign up for a Twilio account at twilio.com.
+2. Configure your account:
  - Once your account is set up, head to Message > Services and create a new service
  - Setup your values, continue, and set up your senders. This template currently support SMS and WhatsApp
  - On the integration tab under "Incoming Messages", select "Send a webhook" and add your Replit endpoint URL to the "Request URL" field.  The Endpoint URL depends on the service you want to integrate. Here are the two possibilities: 
- - SMS: https://YOUR_REPLUT_URL.replit.dev/twilio/sms
-- WhatsApp: https://YOUR_REPLUT_URL.replit.dev/twilio/whatsapp
+ - SMS: https://YOUR_REPLIT_URL.replit.dev/twilio/sms
+- WhatsApp: https://YOUR_REPLIT_URL.replit.dev/twilio/whatsapp
+- If you struggle to find your Replit URL, simply run it and you will see the "Open in new tab" button.
 - Then continue to Add Compliance info and finalize the setup
 
 3. Add the Twilio Credentials to Replit:
@@ -22,7 +22,6 @@ To integrate a Twilio SMS service into your application, you'll need to first se
    - To read more about it, check out this article: https://support.twilio.com/hc/en-us/articles/223136027-Auth-Tokens-and-How-to-Change-Them
    - Add another secret with the key `TWILIO_PHONE_NUMBER` and the value as your Twilio phone number. Make sure to add it with the + at the beginning.
 
-Note: Similar to the Telegram integration, consider a database setup for managing chat mappings for scalability.
 """
 
 import os

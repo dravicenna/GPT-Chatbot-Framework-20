@@ -12,8 +12,6 @@ To integrate a Telegram bot into your application, you'll need to first create t
    - Go to your Replit project where you intend to use the Telegram bot.
    - Open the 'Secrets' tab (usually represented by a lock icon).
    - Create a new secret with the key as `TELEGRAM_TOKEN` and the value as the API token provided by BotFather.
-
-Note: In case you want to use the Telegram integration on scale, it's highly recommended to implement a database setup for load_chat_mapping() and save_chat_mapping() functions.
 """
 
 import os
